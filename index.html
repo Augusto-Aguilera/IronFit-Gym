@@ -2,114 +2,103 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IronFit Gym</title>
-<link rel="stylesheet" href="gimnasio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IronFit Gym - Transforma tu cuerpo con los mejores profesionales.">
+    <title>IronFit Gym | Patric Aguilera</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="gimnasio.css">
 </head>
 
 <body>
 
-<nav>
+    <nav>
+        <h2 class="logo">IRON<span>FIT</span></h2>
+        <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#planes">Planes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 
-<h2 class="logo">IronFit</h2>
+    <header class="hero">
+        <h1>Transforma tu cuerpo</h1>
+        <p>Entrena con los mejores profesionales y alcanza tu máximo potencial.</p>
+        <a class="btn" href="#planes">Ver planes</a>
+    </header>
 
-<ul>
-<li><a href="#servicios">Servicios</a></li>
-<li><a href="#planes">Planes</a></li>
-<li><a href="#contacto">Contacto</a></li>
-</ul>
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios">
+            <div class="card">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Entrenamiento Personal</h3>
+                <p>Planes personalizados para alcanzar tus objetivos de forma eficiente.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-fire"></i>
+                <h3>Cross Training</h3>
+                <p>Entrenamientos intensivos para mejorar fuerza, potencia y resistencia.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-apple-alt"></i>
+                <h3>Nutrición</h3>
+                <p>Asesoramiento nutricional profesional adaptado a tu ritmo de vida.</p>
+            </div>
+        </div>
+    </section>
 
-</nav>
+    <section id="planes">
+        <h2>Elige tu Plan</h2>
+        <div class="planes">
+            <div class="plan">
+                <h3>Mensual</h3>
+                <div class="price">$30 <span>/ mes</span></div>
+                <button onclick="selectPlan('Mensual')">Elegir plan</button>
+            </div>
+            <div class="plan destacado">
+                <div class="badge">Recomendado</div>
+                <h3>Trimestral</h3>
+                <div class="price">$75 <span>/ 3 meses</span></div>
+                <button onclick="selectPlan('Trimestral')">Elegir plan</button>
+            </div>
+            <div class="plan">
+                <h3>Anual</h3>
+                <div class="price">$250 <span>/ año</span></div>
+                <button onclick="selectPlan('Anual')">Elegir plan</button>
+            </div>
+        </div>
+    </section>
 
-<header class="hero">
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form id="gym-contact">
+            <input type="text" id="name" placeholder="Tu Nombre" required>
+            <input type="email" id="email" placeholder="Tu Email" required>
+            <textarea id="message" placeholder="¿En qué podemos ayudarte?" rows="4"></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
 
-<h1>Transforma tu cuerpo</h1>
+    <footer>
+        <p>® Patric Aguilera</p>
+        <p>© 2026 IronFit Gym - San Luis, Argentina</p>
+    </footer>
 
-<p>Entrena con los mejores profesionales</p>
+    <script>
+        function selectPlan(plan) {
+            alert("Has seleccionado el plan: " + plan + ". ¡Te esperamos en IronFit!");
+        }
 
-<a class="btn" href="#planes">Ver planes</a>
-
-</header>
-
-<section id="servicios">
-
-<h2>Nuestros Servicios</h2>
-
-<div class="servicios">
-
-<div class="card">
-<h3>Entrenamiento Personal</h3>
-<p>Planes personalizados para alcanzar tus objetivos.</p>
-</div>
-
-<div class="card">
-<h3>Cross Training</h3>
-<p>Entrenamientos intensivos para mejorar fuerza y resistencia.</p>
-</div>
-
-<div class="card">
-<h3>Nutrición</h3>
-<p>Asesoramiento nutricional profesional.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="planes">
-
-<h2>Planes</h2>
-
-<div class="planes">
-
-<div class="plan">
-<h3>Mensual</h3>
-<p>$30 / mes</p>
-<button>Elegir plan</button>
-</div>
-
-<div class="plan destacado">
-<h3>Trimestral</h3>
-<p>$75 / 3 meses</p>
-<button>Elegir plan</button>
-</div>
-
-<div class="plan">
-<h3>Anual</h3>
-<p>$250 / año</p>
-<button>Elegir plan</button>
-</div>
-
-</div>
-
-</section>
-
-<section id="contacto">
-
-<h2>Contáctanos</h2>
-
-<form>
-
-<input type="text" placeholder="Nombre" required>
-
-<input type="email" placeholder="Email" required>
-
-<textarea placeholder="Mensaje"></textarea>
-
-<button type="submit">Enviar</button>
-
-</form>
-
-</section>
-
-<footer>
-    <p>&#174; Patric Aguilera</p>
-
-<p>© 2026 IronFit Gym</p>
-
-</footer>
+        document.getElementById('gym-contact').onsubmit = (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            alert("¡Gracias " + name + "! Tu consulta ha sido enviada. Nos pondremos en contacto pronto.");
+            e.target.reset();
+        };
+    </script>
 
 </body>
-
 </html>
